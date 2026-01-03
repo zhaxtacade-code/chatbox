@@ -2,6 +2,8 @@ import { streamText } from "ai"
 import { searchPDFs } from "@/lib/pdf-knowledge-base"
 
 export const maxDuration = 30
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 export async function POST(req: Request) {
   try {
